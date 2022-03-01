@@ -10,5 +10,5 @@ while True:
     availablePorts.append(file)
 
   if len(availablePorts) > 0:
-    os.system("chown <USER> /dev/ttyUSB*")
+    os.system("chown $USER /dev/ttyUSB*")
     exit()
