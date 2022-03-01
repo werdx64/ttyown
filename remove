@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo ===TTYOWN REMOVE SCRIPT===
+echo
+rm /usr/bin/ttyown
+echo Removed: /usr/bin/ttyown
+systemctl disable ttyown
+rm /lib/systemd/system/ttyown.service
+echo Removed: /lib/systemd/system/ttyown.service
+echo Reloading systemd daemons...
+systemctl daemon-reload
+echo Done removing!
+exit
+
+
