@@ -4,9 +4,10 @@ echo ===TTYOWN INSTALL SCRIPT===
 echo
 echo Copying files...
 cp ttyown.py /usr/bin/ttyown
-echo Copied: ttyown.py -> /usr/bin/ttyown
+chmod +x /usr/bin/ttyown
+echo "Copied: ttyown.py -> /usr/bin/ttyown [*]"
 cp ttyown.service /lib/systemd/system/ttyown.service
-echo Copied: ttyown.service -> /lib/systemd/system/ttyown.service
+echo "Copied: ttyown.service -> /lib/systemd/system/ttyown.service [ ]"
 echo
 echo done!
 echo
