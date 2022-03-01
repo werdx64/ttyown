@@ -1,0 +1,18 @@
+#/bin/sh
+
+echo ===TTYOWN INSTALL SCRIPT===
+echo
+echo Copying files...
+cp ttyown.py /usr/bin/ttyown
+echo Copied: ttyown.py -> /usr/bin/ttyown
+cp ttyown.service /lib/systemd/system/ttyown.service
+echo Copied: ttyown.service -> /lib/systemd/system/ttyown.service
+echo
+echo done!
+echo
+echo Reloading systemd daemons...
+systemctl daemon-reload
+echo Daemons reloaded!
+echo
+echo Installation done!
+
