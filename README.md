@@ -1,4 +1,4 @@
 # ttyown
 
-ttyown is a service for comfortable work in Arduino IDE, that running under linux.
+ttyown is a service for comfortable work in Arduino IDE under linux.
 It's just changes ownership of /dev/ttyUSB*
