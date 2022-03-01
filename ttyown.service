@@ -1,0 +1,11 @@
+[Unit]
+Description="This service allows opening serial ports in Arduino IDE"
+
+[Service]
+User=root
+WorkingDirectory=/usr/bin
+ExecStart=/usr/bin/ttyown.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
